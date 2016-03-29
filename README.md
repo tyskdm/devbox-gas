@@ -30,7 +30,7 @@ git submodule add git@github.com:tyskdm/devbox-gas.git ./devbox
 - While it's built from Dockerfile in this repo, you can use your own image.
 
 ```shell
-./devbox/dockerfile/build           # build 'tyskdm/devbox-gas' in your pc.
+./devbox/build        # build 'tyskdm/devbox-gas' in your pc.
 ./devbox/up
 ```
 

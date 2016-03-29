@@ -1,6 +1,6 @@
 #! /bin/sh
 BASEDIR=`dirname $0`
-PROJECTDIR=$(cd ${BASEDIR}/../; pwd)
+PROJECTDIR=$(cd ${BASEDIR}/; pwd)
 PROJECTNAME=`basename ${PROJECTDIR}`
 
-docker build --no-cache -t tyskdm/${PROJECTNAME} ${BASEDIR}
+docker build --no-cache -t tyskdm/${PROJECTNAME} ${BASEDIR}/dockerfile
