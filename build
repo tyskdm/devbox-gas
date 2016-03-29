@@ -2,6 +2,5 @@
 BASEDIR=`dirname $0`
 PROJECTDIR=$(cd ${BASEDIR}/../; pwd)
 PROJECTNAME=`basename ${PROJECTDIR}`
-CONTAINERNAME=devbox-${PROJECTNAME}
 
-docker build --no-cache -t $1 ${BASEDIR}/dockerfile
+docker build --no-cache -t tyskdm/${PROJECTNAME} ${BASEDIR}
