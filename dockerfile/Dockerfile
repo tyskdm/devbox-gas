@@ -38,3 +38,4 @@ RUN apt-get install -y python-pip subversion && \
 #
 RUN apt-get install -y build-essential libssl-dev wget && \
     wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
+ENV BASH_ENV="/root/.nvm/nvm.sh"
