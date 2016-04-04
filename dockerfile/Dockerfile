@@ -34,12 +34,8 @@ RUN tar xvfz /usr/local/closure-compiler/compiler-latest.tar.gz -C /usr/local/cl
 RUN apt-get install -y python-pip subversion && \
     pip install https://closure-linter.googlecode.com/svn/trunk/
 #
-# nodejs
+# nvm
 #
-RUN apt-get install -y nodejs npm && \
-    update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
-#
-# gas-manager and wget
-#
-RUN npm install -g gas-manager && \
-    apt-get install -y wget
+RUN apt-get install -y build-essential libssl-dev wget && \
+    wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
+ENV BASH_ENV="/root/.nvm/nvm.sh"
