@@ -26,6 +26,14 @@ git submodule add git@github.com:tyskdm/devbox-gas.git ./devbox
 ./devbox/up
 ```
 
+- This command use docker image 'tyskdm/devbox-gas' that exists on dockerhub.
+- While it's built from Dockerfile in this repo, you can use your own image.
+
+```shell
+./devbox/build        # build 'tyskdm/devbox-gas' in your pc.
+./devbox/up
+```
+
 #### start
 
 ```shell
