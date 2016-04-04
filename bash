@@ -4,4 +4,4 @@ PROJECTDIR=$(cd ${BASEDIR}/../; pwd)
 PROJECTNAME=`basename ${PROJECTDIR}`
 CONTAINERNAME=devbox-${PROJECTNAME}
 
-docker exec -it ${CONTAINERNAME} bash -c "$*"
+docker exec -t ${CONTAINERNAME} bash -c "$*"
